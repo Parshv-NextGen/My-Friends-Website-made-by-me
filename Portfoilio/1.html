@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <title>Vortechsia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <audio id="backgroundMusic" src="1.mp3" loop></audio>
+        <button id="startMusicButton" style="display: none;">Start Background Music</button>
+
+        <div class="page1" id="home">
+            <div class="navbar">
+                <div class="icon">
+                    <img src="Logo.png" alt="Logo" style="height: 50px;">
+                </div>
+                <div class="links">
+                    <a class="navlink" href="#home">Home</a>
+                    <a class="navlink" href="#about">About</a>
+                    <a class="navlink" href="#work">Work</a>
+                    <a class="navlink" href="#contact">Contact Me</a>
+                </div>
+                <div class="music-control">
+                    <svg id="musicIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+                        <path d="M48 6v32.1C46.2 37.5 44 37 41.5 37c-5.8 0-10.5 4.7-10.5 10.5S35.7 58 41.5 58 52 53.3 52 47.5V16h8V6H48zM41.5 54C39 54 37 52 37 49.5S39 45 41.5 45 46 47 46 49.5 44 54 41.5 54zM12 14v31.9C10.2 45.5 8 45 5.5 45 0.7 45-4 49.7-4 55.5S0.7 66 5.5 66 16 61.3 16 55.5V24h8v-8H12zm-6.5 40C2 54 0 52 0 49.5S2 45 4.5 45 9 47 9 49.5 7 54 4.5 54z"></path>
+                    </svg>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>                                    
+            </div>
+            <br>
+            <br>
+            <div class="down">
+                <div class="left1">
+                    <h1 class="typewriter">
+                        <span id="typewriter-text"></span>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt laborum eos porro
+                        sapiente pariatur ratione aspernatur, iste doloremque reprehenderit laboriosam veritatis placeat
+                        rerum perferendis amet. Qui odio minus velit nulla possimus, officia repudiandae provident esse
+                        unde earum enim inventore exercitationem minima, reprehenderit magni.</p>
+                        
+                    <br>
+                    <br>
+                    <br>
+                        
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i><svg>facebb</svg></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="right" style="padding: 50px;">
+                    <img class="designer-img" src="Designer.png" alt="Designer">
+                </div>
+            </div>
+        </div>
+
+        <div class="page2" id="about">
+            <div class="navbar2">
+                <h1>About Me</h1>
+            </div>
+            <div class="down2">
+                <div class="left2">
+                    <h1>My Skills</h1>
+                    <li>
+                        <h3>HTML</h3>
+                        <span class="bar"><span class="html"></span></span>
+                    </li>
+                    <li>
+                        <h3>CSS</h3>
+                        <span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <span class="bar"><span class="js"></span></span>
+                    </li>
+                </div>
+                <div class="right2">
+                    <h1>My Experience</h1>
+                    <p>Over my seven years as a web developer, I've mastered HTML, CSS and JavaScript. I started at a
+                        small startup, developing their e-commerce platform, then moved to a mid-sized tech firm where I
+                        led a team in redesigning their flagship product. My skills in React, Angular, and API
+                        integration have consistently enabled me to deliver robust and user-friendly web solutions. I've
+                        always prioritized staying updated with industry trends to ensure my projects are cutting-edge
+                        and efficient.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page3" id="work">
+            <br>
+            <br>
+            <h1>My Work</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <img class="img1" src="preview.png" alt="">
+                    <div class="cardcentre">
+                        <h2>Calculator</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img1" src="on-demand-social-network-website.png" alt="">
+                    <div class="cardcentre">
+                        <h2>Social Media</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img1" src="7f47363a800692be534d77668b3d4c4b.png" alt="">
+                    <div class="cardcentre">
+                        <h2>Music Player</h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="page4" id="contact">
+            <h1>Contact Me</h1>
+            <form class="contact-form" action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <br>
+        </div>
+        
+        <div class="page5">
+            <footer>
+                <p style="color: aliceblue;">&copy; 2024 Vortechsia. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.links').classList.toggle('active');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = "I am Sahej, a Web Developer.";
+            const delay = 100; // delay in ms
+            let index = 0;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    document.getElementById('typewriter-text').textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, delay);
+                } else {
+                    setTimeout(() => {
+                        document.getElementById('typewriter-text').textContent = '';
+                        index = 0;
+                        typeWriter();
+                    }, 2000); // 2 second delay before repeating
+                }
+            }
+
+            typeWriter();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById("backgroundMusic");
+            const startMusicButton = document.getElementById("startMusicButton");
+            const musicIcon = document.getElementById("musicIcon");
+
+            function toggleMusic() {
+                if (audio.paused) {
+                    audio.play();
+                    musicIcon.classList.add("playing");
+                } else {
+                    audio.pause();
+                    musicIcon.classList.remove("playing");
+                }
+            }
+
+            startMusicButton.addEventListener('click', toggleMusic);
+            musicIcon.addEventListener('click', toggleMusic);
+
+            startMusicButton.click(); // Auto-start the music when the page loads
+        });
+
+    </script>
+</body>
+</html>
